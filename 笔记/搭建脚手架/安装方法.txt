@@ -1,0 +1,42 @@
+1，安装全局，在”运行“终端中写
+npm install --global vue-cli
+
+2,新建一个项目，在终端中打开
+vue init webpack vcustomer(项目名来着啦~)
+回车  全选no   可以在这个时候安装路由
+
+3，在vcustomer中打开终端，下载35个模块
+npm install
+
+4，可以改端口，原来的是8080
+
+5，打开vcustomer的终端，
+npm run dev
+
+6，安装vue-resource
+npm install vue-resource --save  
+
+安装vue-router
+npm install vue-router --save
+
+
+7，在使用服务器获取数据的时候，安装vue-resuorce
+npm install vue-resource --save
+
+在main中引用：
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+ import VueResource from 'vue-resource'
+
+import App from './App'
+import Customers from './components/Customers'
+ import About from './components/About'
+
+Vue.config.productionTip = false
+
+
+Vue.use(VueRouter)
+Vue.use(VueResource)//容易出错的地方
+
